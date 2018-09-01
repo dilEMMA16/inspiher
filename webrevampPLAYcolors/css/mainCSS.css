@@ -1,0 +1,934 @@
+
+
+
+/*FOR ALL PAGES box-sizing: border-box; */
+
+* {
+	
+					
+}
+
+p, h1, div {overflow: hidden !important;}
+
+
+ .parallax {
+ 	
+ 	/* Create the parallax scrolling effect  size was cover before*/
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+ width: 100vw !important;
+ padding: 0;
+ margin: 0;
+
+        }
+                
+body {
+	font-family: "Roboto Condensed"; 
+	color: #8c8885; 
+	/*font-size: 16px;1.11vw*/
+ font-size: 1.5vw !important;
+ margin: 0;
+	}
+                
+.game {
+	font-family: "Roboto Condensed"; 
+	font-size: 1.875em;
+	}
+
+.gameHead {
+	font-family: "Roboto Condensed"; 
+	font-size: 3.5em; 
+	padding-bottom: 0px; 
+	margin-bottom:0px;
+	}
+  
+	.gameHead2 {
+		font-family: "Roboto Condensed"; 
+	font-size: 3em; 
+	padding-bottom: 0px; 
+	margin-bottom:0px;
+		
+	}
+.gameTitle {
+	font-family: "Roboto Condensed"; 
+	font-size: 7em; 
+	padding-bottom: 0px; 
+	margin-bottom:0px; 
+	line-height: 1;
+	}
+
+.centered {
+	display: flex;  /* make the row a flex container */
+        align-items: center;
+        /* vertically center each flex item in the container */
+	}
+ 
+ span.navbar-toggler-icon {color: #b5b5b5 !important;}
+
+
+.myNav {
+	background-color: #3d4e6c !important; 
+	position: fixed; 
+	width: 100%; 
+	font-size: 200%;
+	}
+
+#navPic {
+	float: left; 
+	position: relative; 
+	width: 70%; 
+	height: auto;
+	}
+
+.myCollapseNav {
+	background-color: #556c96; 
+	text-align: right;
+	}
+
+#navElements {
+	margin-right: 20px; 
+	color: #f4f4f4 !important;
+	}              
+
+.inTextLink {
+	color: #c1b8b6;
+	
+	}
+
+.inTextLink:hover {
+	color: #c1b8b6;
+ filter: brightness(.85);
+	text-decoration: underline;
+	
+	}
+
+
+
+
+
+/* HOME PAGE */
+
+                
+#scrollIcon {
+	position: relative;
+	-webkit-animation-name: dance; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	-webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+	animation-name: dance;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes dance {
+                    
+	0%  {   -ms-transform: rotate(-7deg); /* IE 9 */
+		-webkit-transform: rotate(-7deg); /* Safari 3-8 */
+                transform: rotate(-7deg);}
+        33%  {  -ms-transform: rotate(7deg); /* IE 9 */
+                -webkit-transform: rotate(7deg); /* Safari 3-8 */
+                transform: rotate(7deg);}
+        66%  {  -ms-transform: rotate(7deg); /* IE 9 */
+                -webkit-transform: rotate(7deg); /* Safari 3-8 */
+                transform: rotate(7deg);}
+        100% {  -ms-transform: rotate(-7deg); /* IE 9 */
+                -webkit-transform: rotate(-7deg); /* Safari 3-8 */
+                transform: rotate(-7deg);}}
+        }
+                
+/* Standard syntax */
+@keyframes dance {
+                    
+        0%  {   -ms-transform: rotate(-7deg); /* IE 9 */
+                -webkit-transform: rotate(-7deg); /* Safari 3-8 */
+                transform: rotate(-7deg);}
+        33%  {  -ms-transform: rotate(7deg); /* IE 9 */
+                -webkit-transform: rotate(7deg); /* Safari 3-8 */
+                transform: rotate(7deg);}
+        66%  {  -ms-transform: rotate(7deg); /* IE 9 */
+                -webkit-transform: rotate(7deg); /* Safari 3-8 */
+                transform: rotate(7deg);}
+        100% {  -ms-transform: rotate(-7deg); /* IE 9 */
+                -webkit-transform: rotate(-7deg); /* Safari 3-8 */
+                transform: rotate(-7deg);}}
+        }
+             
+.buttonPeach {
+	border-color: #8c8885;
+	background-color: #8c8885;
+	color:#f4f4f4;
+	border: none;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	font-size: 1.5em ;
+	
+	cursor: pointer;
+	
+	}
+
+.buttonPeach:hover {
+	filter: brightness(1.15);
+	}
+                
+.buttonGreen{
+	border-color: #698558;
+	background-color:#607a51;
+	color: #f4f4f4;
+	border: none;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-size: 1.5em;
+	margin-top: 10px;
+	}
+
+.buttonGreen:hover {
+	filter: brightness(1.15);
+	}
+
+.buttonGray{
+	
+	border-color: #d6d0cb;
+	background-color:#d6d0cb;
+	color:#f4f4f4;
+	border: none;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-size: 1.5em;
+	margin-top: 10px;
+	}
+
+.buttonGray:hover {
+	filter: brightness(1.15);
+	}
+
+.introDiv {
+	min-height: 800px; 
+	background-color:#0e0f26; 
+	padding-top: 200px;  
+	padding-bottom: 200px; 
+	text-align: center;
+ 
+
+	}
+
+.starParallax {
+	background-image: url(../img/2.png);
+ width: 100vw;
+ height: 90vh;
+ background-size: cover;
+ 
+	}
+
+#csciDiv {
+	/* min-height: 800px;  */
+	background-color:#b5b5b5;  
+	text-align: center;
+ padding-top: 30px;
+ padding-bottom: 30px;
+	}
+
+#csciDivInner {
+	background-color: #f4f4f4; 
+	width: 100%; 
+	height: 100%; 
+ 
+ padding-left: 13vw; 
+	padding-right: 13vw; 
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	
+	color: #8c8885;
+	}
+
+.csciHead {
+	line-height: 1; 
+	font-size: 4.4vw; 
+	font-family: "Roboto Condensed";
+	}
+
+.csciPbig {
+	line-height: 1; 
+	font-size: 1.25em;
+	}
+
+.csciPsmall {
+	line-height: 1; 
+	font-size: 1em;
+	}
+
+p a {
+	color: #ccc6c2 !important; 
+	filter: brightness(.85);
+	}
+
+.mountainParallax {
+	background-image: url(../img/3.png); 
+	/*min-height: 800px;*/
+ width: 100vw;
+ height: 90vh;
+ background-size: cover;
+	}
+
+#wwDiv {
+	background-color:#8c8885; 
+	text-align: center;
+ padding-top: 30px;
+ padding-bottom: 30px;
+ /*min-height: 445px;*/
+	}
+
+#wwDivInner {
+	background-color: #f4f4f4; 
+	width: 100%; 
+	height: 100%;  
+	padding-left: 13vw; 
+	padding-right: 13vw; 
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	}
+
+.wwQuote {
+	line-height: 1; 
+	font-size: 3vw; 
+	font-family: "Roboto Condensed";
+	}
+
+.grassParallax {
+	background-image: url(../img/4.png); 
+	/*min-height: 600px;*/
+ width: 100vw;
+ height: 90vh;
+ background-size: cover;
+	}
+
+#learnDiv {
+	/*min-height: 380px; */ 
+	background-color:#445639;  
+	text-align: center;
+ padding-top: 30px;
+ padding-bottom: 30px;
+	}
+
+#learnDivInner {
+	background-color: #f4f4f4; 
+	width: 100%; 
+	height: 100%; 
+	padding-left: 13vw; 
+	padding-right: 13vw; 
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+
+	}
+
+.learnHead {
+	line-height: 1; 
+	font-size: 4.4vw;
+	font-family: "Roboto Condensed";
+
+	}
+
+.learnP {
+	line-height: 1; 
+ font-size: 1.25em;
+
+	}
+
+.rootParallax {
+	background-image: url(../img/5.png); 
+/*	min-height: 500px; */
+ width: 100vw;
+ height: 90vh;
+ background-size: cover;
+	}
+
+footer {
+	min-height: 2vh; 
+	color: #8c8885; 
+	text-align: center;
+	padding-top: .8vh;
+	filter: brightness(.65);
+ font-size: 1em;
+	}
+
+
+
+
+
+/* COMPUTER SCIENCE PAGE */
+.pageContentCSCI {padding: 0 !important;}
+
+.compsciDiv {
+	min-height: 40vh; 
+	background-color:#0e0f25; 
+	padding-bottom: 30px;
+	padding-top: 30px; 
+	text-align: center; 
+	margin-bottom: 60px; 
+	}
+
+.compsciDivInner {
+	background-color: #f4f4f4; 
+	width: 100%; 
+	height: 100%; 
+	padding-left: 13vw; 
+	padding-right: 13vw; 
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+
+	}
+
+.compsciDivHead {
+	line-height: 1; 
+	font-size: 4.4vw; 
+	font-family: "Roboto Condensed";
+	color: #8c8885;
+	text-align: center;
+	}
+
+.compsciDivP {
+	line-height: 1; 
+	font-size: 1.25em;
+	text-align: center;
+	}
+
+.compsciDivPsmall {
+	line-height: 1; 
+	font-size: 1em;
+
+	}
+
+.plainPlanetParallax {
+	background-image: url(../img/2p.png);
+ background-size: cover;
+	min-height: 450px;
+ margin: 0;
+ padding: 0;
+ width: 100vw;
+	filter: brightness(.5);
+	z-index: 7;
+	}
+
+.compsciDivQuote {
+	line-height: 1; 
+	font-size: 3vw;
+	color: #8c8885; 
+	text-align: center; 
+	font-family: "Roboto Condensed";
+	}
+
+.aliensOneParallax {
+	background-image: url(../img/2pa1.png); 
+	min-height: 450px; 
+	filter: brightness(.5);
+	z-index: 7;
+ 
+	}
+
+.aliensTwoParallax {
+	background-image: url(../img/2pa2.png); 
+	min-height: 750px; 
+	filter: brightness(.5);
+	z-index: 7;
+	}
+
+
+/* WONDER WOMEN PAGE */
+
+.mod {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+	}
+                
+                
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 6; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(18,26,82); /* Fallback color */
+	background-color: rgba(18,26,82,0.9); /* Black w/ opacity */
+	background-image: url(../img/2.png);
+	}
+                
+/* Modal Content */
+.modal-content {
+	margin: auto;
+	display: block;
+	padding: 50px;
+	min-height: 400px; 
+	width: 70%; 
+	margin: 0 auto; 
+	background-color: #f4f4f4; 
+	border: 15px solid; 
+	border-color: #ccc6c2; 
+	padding: 45px; 
+	font-size: 18px;
+	}
+                
+/* Add Animation */
+.modal-content{    
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+	}
+                
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+       	to {-webkit-transform:scale(1)}
+        }
+                
+@keyframes zoom {
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+	}
+                
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+	overflow: hidden;
+	}
+                
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+	}
+                
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+	.modal-content {
+		width: 100%;
+                }
+        }
+
+
+.instructDiv {
+	z-index: 4;
+	width: 100%; 
+	position: relative; 
+	top: 10vh; 
+	margin: 0 auto;
+	background-color: #f4f4f4;
+ padding-top: 30px;
+ padding-bottom: 10px;
+	
+	}
+	
+	.instructDivInner {
+	padding-left: 8vw; 
+	padding-right: 8vw; 
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	background-color: #f4f4f4;
+	font-size: 1vw; 
+	line-height: 1; 
+	text-align: center; 
+	color: #8c8885;
+	}
+
+
+#wwPicAda {
+	position: absolute; 
+	top: 60vh; 
+	left: 6vw; 
+	width: 5%; 
+	height: auto;
+	}
+
+#wwPicAdele {
+	position: absolute; 
+	top: 75vh; 
+	left: 14vw; 
+	width: 5%; 
+	height: auto;
+	}
+
+#wwPicMargaret {
+	position: absolute; 
+	top: 72vh; 
+	left: 25vw; 
+	width: 5%; 
+	height: auto;
+	}
+
+
+#wwPicGrace {
+	position: absolute; 
+	top: 52vh; 
+	left: 36vw; 
+	width: 5%; 
+	height: auto;
+	}
+
+
+#wwPicDorothy {
+	position: absolute; 
+	top: 65vh; 
+	left: 48vw; 
+	width: 5%; 
+	height: auto;
+	}
+
+
+#wwPicMarissa {
+	position: absolute; 
+	top: 76vh; 
+	left: 60vw; 
+	width: 5%; 
+	height: auto;
+	}
+
+
+#wwPicSusan {
+	position: absolute; 
+	top:68vh; 
+	left: 72vw; 
+	width: 5%; 
+	height: auto;
+	}
+
+#wwPicRoberta {
+	position: absolute; 
+	top: 69vh; 
+	right: 5vw; 
+	width: 5%; 
+	height: auto;
+	}
+
+
+#wwPicAnita {
+	position: absolute; 
+	top: 64vh; 
+	right: 15vw; 
+	width: 5%; 
+	height: auto;
+	}
+
+
+/* LEARN TO CODE PAGE */
+
+.getStartedDiv {
+	min-height: 42vh; 
+	background-color:#607a51; 
+	padding-top: 30px;
+ padding-bottom: 30px; 
+	text-align: center;  
+	margin-bottom: 60px;
+	margin-top: 5vh;
+ color: #8c8885 !important;
+	}
+
+.getStartedDivInner {
+	background-color: #f4f4f4; 
+	width: 100%; 
+	height: 100%; 
+	padding-left: 10vw; 
+	padding-right: 10vw; 
+	padding-top: 5vw;
+	padding-bottom: 5vw; 
+	}
+
+.getStartedHead {
+	line-height: 1; 
+	font-size: 4.4vw; 
+	font-family: "Roboto Condensed";
+	
+	}
+
+.getStartedP {
+	line-height: 1; 
+	font-size: 1.25em;
+	font-family: 'Roboto Condensed';
+	}
+
+#codingSitesDiv {
+	background-color: #f4f4f4; 
+	padding: 30px; 
+	color: #8c8885;
+	min-height:400px; 
+	text-align: center; 
+	padding-top: 50px; 
+	padding-bottom: 50px; 
+	border-bottom: 20px solid #7c9d68;
+	}
+
+.codingSitesDivP {
+	font-size: 1.25em;
+	font-family: 'Roboto Condensed';
+	}
+	
+	
+
+#rootPara {
+	background-image: url(../img/5.png); 
+	min-height: 700px;
+	}
+
+.undergroundPara {
+	background-image: url(../img/9.png); 
+	min-height: 450px;
+	}
+
+#tipsDiv {
+	border-top: 20px solid #7c9d68; 
+	border-bottom: 40px solid #3d3b3a;
+	}
+
+#tipTitleDiv {
+	background-color: #64615f;
+	padding: 30px; 
+	color: #ccc6c2; 
+	text-align: center;
+}
+
+.tipHead {
+	font-size: 4.4vw; 
+	font-family: "Roboto Condensed";
+	}
+
+.tipColumn {
+	background-color: #f4f4f4;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	/*font-size: 1.25em; */
+	color: #8c8885 !important;
+	font-family: 'Roboto Condensed';
+	}
+	
+	
+	
+	.leftCol {
+		   padding-left: 5vw !important; 
+	}
+	
+	.rightCol {
+			padding-right: 5vw !important; 
+	}
+
+
+img {
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:90%;
+}
+
+
+@media only screen and (max-width: 900px)  {
+	
+	/*make text bigger*/
+	/* big text from 5vw*/
+	.tipHead, .getStartedHead, .compsciDivHead, .learnHead, .csciHead, .gameHead {
+					font-size: 9vw !important;
+				}
+				
+		.wwQuote {
+					font-size: 5vw;
+		}
+	
+	/* small text from 1.5em*/
+.buttonPeach, .buttonGreen, .buttonGray{
+		  font-size: 3em !important;
+	}
+	
+	
+	
+	/* small text from 1.25, 1*/
+	.codingSitesDivP, .getStartedP, .instructDivInner, .compsciDivPsmall, .compsciDivP, .csciPbig, .csciPsmall, .compsciDivP {
+					font-size: 2.25em !important;
+	}
+	
+	.learnP {
+					font-size: 4vw;
+	}
+	
+}
+
+
+@media only screen and (max-width: 500px) {
+  /* Mobile CSS goes here */
+  
+ .starParallax { background-image: url(../img/2vert.png) !important; background-attachment: scroll; background-size: cover;}
+ 
+ #benefitsOfCompPic {display: none;}
+ #grassHorizontal {display: block !important;}
+ #grassHorizontalBig {display: none !important;}
+ #benefitsOfCompList {display: block !important; z-index: 3;}
+ 
+ .tipColumn li i {font-size: 4vw;}
+	
+ .mountainParallax { background-image: url(../img/3vert.png) !important; background-attachment: scroll; background-size: cover;}
+ 
+ 
+ .grassParallax { background-image: url(../img/4vert.png) !important; background-attachment: scroll; background-size: cover;}
+ 
+ .undergroundPara {display: none !important;}
+	
+ .rootParallax { background-image: url(../img/5vert.png) !important; background-attachment: scroll; background-size: cover;}
+ 
+ .aliensOneParallax {
+	background-image: url(../img/2pa1V.png) !important; 
+ width: 100vw;
+ height: 90vh;
+ background-attachment: scroll;
+ background-size: cover;
+	}
+ 
+ .plainPlanetParallax {background-image: url(../img/2pmobileV.png) !important; 
+	
+ width: 100vw;
+ height: 90vh;
+ background-attachment: scroll;
+ background-size: cover;}
+ 
+ .aliensTwoParallax {background-image: url(../img/2pa2V.png) !important; 
+	
+ width: 100vw;
+ height: 90vh;
+ background-attachment: scroll;
+ background-size: cover;}
+	
+	#navigation {z-index: 10 !important; position: fixed; top: 0;
+                                width:100% ;
+                                margin : 0;
+                                padding : 0;
+	}        
+ 
+	.introDiv {padding-top: 20vh !important;}
+	
+ #csciDiv {padding: 0; background-color: #f4f4f4; }
+  
+ #wwDiv { padding: 0;}
+  
+ #learnDiv { padding: 0;}
+	
+	.csciBoxes {display: none !important;}
+	
+	#csciInTextLink {display: none;}
+	
+	.headerImage {content:url("http://comweb.cs.ndsu.nodak.edu/~emmschre/webrevampPLAYcolors/img/mobileHeader3.png");}
+	
+	#csciButton {display: block !important;}
+  
+  .pageContentCSCI {padding: 0;}
+  
+  /* added important to compsciDiv margin */
+  .compsciDiv{margin: 0 !important; padding: 0 !important; min-height: 50vh;}
+  .compsciDivInner { border-radius: 0; padding: 12vw; margin: 0; width: 100%;}
+  
+  
+  .myCollapseNav {font-size: 10vw !important;}
+  
+  .getStartedDiv{margin: 0; padding: 0 !important; min-height: 30vh;}
+  .getStartedDivInner { border-radius: 0; margin: 0; width: 100%;}
+  
+  
+  /* background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	#mobileStar {visibility: visible !important; width: 100vw; height: 90vh; background-size: cover;}
+	
+   *
+   *
+   *
+   **/
+   /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+      background-color: #8c8885;
+      color: #f4f4f4;
+      cursor: pointer;
+      padding: 18px;
+      width: 100% !important;
+      text-align: left;
+      border: 5px solid #f4f4f4;
+      outline: none;
+      transition: 0.4s;
+      display: block !important;
+      z-index: 5 !important;
+      
+  }
+  
+  /* background color = #f2a984  Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover, .accordion:focus, .accordian:active, .accordian:after, .accordian:visited {
+      background-color: #8c8885 ;
+      filter: brightness(.85);
+						color: #f4f4f4 !important;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+      padding: 0 18px;
+      background-color: white;
+      color: ##8c8885;
+      display: none;
+      overflow: hidden;
+      z-index: 5 !important;
+  }
+  
+		.spacingDiv {height: 15vh !important;}
+  #girls {display: none !important;}
+ 
+  .instructDiv {display: none !important;}
+  .backgroundWW {background-image: none !important;}
+  
+		/*was relative position */
+  .myNav {position: fixed !important; top: 0 !important; margin-bottom: 1vh !important;}
+  
+  .wwDivP {
+      line-height: 1; 
+      font-size: 3.5em;
+      text-align: left;
+      }
+      
+  .wwDivH {
+      line-height: 1; 
+      font-size: 6em;
+      
+      text-align: center;
+      }
+   
+   .gPic {width: 80%; text-align: center; margin: 0 auto; padding-top: 35px; padding-bottom: 35px;}
+   
+   #mobileWomen {display: block !important;;}
+   
+   
+ 
+}
+
+
+
+
+

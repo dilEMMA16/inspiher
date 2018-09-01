@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Wonder Women</title>
+            
+            <meta charset="utf-8">
+
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+            <link rel="icon" href="favstar.ico" type="image/ico" sizes="16x16">
+           
+            <link rel="stylesheet" href="css/mainCSS.css">
+            
+            
+            <!--Fonts-->
+            <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet'>
+            <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+            
+            <!--icons-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+            <!--Bootstrap scripts?-->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+           <style>
+		button:focus {
+                outline: none !important;
+               }
+	    </style>
+            
+        </head>
+        
+        <body class=backgroundWW style="background-image: url('img/3.png'); width: 100%; height: 100%; z-index: 5;">
+            
+            <header>
+                
+                <nav id=navigation class="navbar bg-light navbar-dark myNav" style="z-index: 5;">
+                    <a class="navbar-brand" href="revamp.html"><img src="img/insp.png" id=navPic alt="inspiHER"></a>
+                    <button class="navbar-toggler" type="button" onclick="showNav()">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse myCollapseNav" id="collapsibleNavbar" >
+                      <ul class="navbar-nav" id=navElements>
+                        <li class="nav-item">
+                          <a class="nav-link" href="revamp.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="compsci.html">COMPUTER SCIENCE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="wonderwomen.html">&#9673; WONDER WOMEN</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="learntocode.html">LEARN TO CODE</a>
+                        </li>    
+                      </ul>
+                    </div>  
+                </nav>
+            </header>
+                
+                
+            <div class=instructDiv>
+                    <div class=instructDivInner>
+                        <h1 class="game" >Click on one of the figures to learn more about one of the many influential women in Computer Science.</h1>
+                    </div>
+                    
+                
+            </div>
+            
+            <div style="height: 77vh;" class=spacingDiv><span>&nbsp</span></div>
+                
+                <!-- The Modal -->
+            <div id="modal1" class="modal">
+            
+                  <!-- The Close Button -->
+                  <span class="close" onclick="f2('modal1');">&times;</span>
+                  <div class="modal-content">
+                       <!-- Modal Content (The Image)  -->
+                      <img id="wwReal" src="img/adaReal.png" style="width: 30%;">
+                      <div style="float: right; width: 63%; margin-top: auto;">
+                        <h1 id="bioname" class="gameHead"></h1> <br>
+                        <ul>
+                            <li id="li1"></li> <br>
+                            <li id="li2"></li> <br>
+                            <li id="li3"></li>
+                        </ul>
+                      </div>
+                      
+                  </div>
+                 
+            
+            </div>
+            
+           <div id=girls>    
+          <!-- Trigger the Modal -->
+                <img src="img/ada.png" title=Ada id=wwPicAda class="ww mod" id="ada" alt="ada" onmouseover="this.src='img/adaWave.png';" onmouseout="this.src='img/ada.png';" onclick="f1('img/adaReal.png','Ada Lovelace', 'Considered to have written instructions for the first computer program in the mid 1800s', 'Second Tuesday of October is Ada Lovelace Day', 'Ada Initiative is a non-profit to increase involvement of women in the free culture and open source movements')">
+                       
+                <img src="img/adele.png" title=Adele id=wwPicAdele class="ww" onmouseover="this.src='img/adeleWave.png';" onmouseout="this.src='img/adele.png';" onclick="f1('img/adeleReal.png', 'Adele Goldberg', 'Participated in developing programming language Smalltalk-80 and various concepts relating to object-oriented programming','Served as the President of the Association for Computing Machinery','Formulated Computer Science course at community colleges in the USA and at schools abroad')" >
+                
+                <img src="img/margaret.png" title=Margaret id=wwPicMargaret class="ww" onmouseover="this.src='img/margaretWave.png';" onmouseout="this.src='img/margaret.png';" onclick="f1('img/margaretReal.png', 'Margaret Hamilton', 'Director of the software engineering division that developed onboard flight software for the Apollo space program', 'Founder and CEO of Hamilton Technologies', 'Published over 130 papers, proceedings, and reports about the 60 projects and six major programs in which she has been involved')">
+                
+                <img src="img/grace.png" title=Grace id=wwPicGrace class="ww" onmouseover="this.src='img/graceWave.png';" onmouseout="this.src='img/grace.png';" onclick="f1('img/graceReal.png', 'Grace Hopper', 'Computer Scientist in US Navy, pioneer of programming','Popularized the idea of machine-independent programming languages, which led to the development of COBOL','National Medal of Techology, Golden Gavel Award, SWE Achievement Award, and more')">
+                
+                <img src="img/dorothy.png" title=Dorothy id=wwPicDorothy class="ww" onmouseover="this.src='img/dorothyWave.png';" onmouseout="this.src='img/dorothy.png';" onclick="f1('img/dorothyReal.png', 'Dorothy Vaughan', 'African-American mathematician and human computer working for NASA','Prepared for the introduction of machine computers by teaching herself and her staff the programming language of FORTRAN','Featured in the movie Hidden Figures(2016)')" >
+                
+                <img src="img/marissa.png" title=Marissa id=wwPicMarissa class="ww" onmouseover="this.src='img/marissaWave.png';" onmouseout="this.src='img/marissa.png';" onclick="f1('img/marissaReal.png', 'Marissa Mayer', 'CEO of Yahoo!, Information Technology Executive','Key roles in Google search, images, news, maps, books, product search, toolbar, iGoogle, and gmail', 'Holds several patents in artificial intelligence and interface design')" >
+                
+                <img src="img/susan.png" title=Susan id=wwPicSusan class="ww" onmouseover="this.src='img/susanWave.png';" onmouseout="this.src='img/susan.png';" onclick="f1('img/susanReal.png', 'Susan Wojcicki', 'CEO of YouTube, Technology Executive','Took first Computer Science class as a college senior','Oversaw the development and release of new YouTube applications and experiences')">
+                
+                <img src="img/roberta.png" title=Roberta id=wwPicRoberta class="ww" onmouseover="this.src='img/robertaWave.png';" onmouseout="this.src='img/roberta.png';" onclick="f1('img/robertaReal.png', 'Roberta Williams', 'Video Game Designer, writer, and cofounder of Sierra On-Line', 'Credited wtih creating the graphic adventure genre','One of the most influential PC game designers of the 80s and 90s')" >
+                
+                <img src="img/anita.png" title=Anita id=wwPicAnita class="ww" onmouseover="this.src='img/anitaWave.png';" onmouseout="this.src='img/anita.png';" onclick="f1('img/anitaReal.png', 'Anita Borg', 'Developed MECCA, an email and web-based system for communicating in virtual communities','Founded Systers, the first email network for women in technology', 'Augusta Ada Lovelace Award, Heinz Award for Technology, EFF Pioneer Award');"  >
+                
+           </div>
+           
+            <!-- style="margin-top: 15vh;" -->
+            <div id= mobileWomen style="display: none;">
+                
+                <button class="accordion wwDivH" style="border-top: 10px solid #f4f4f4;">Ada Lovelace</button>
+                <div class="panel wwDivP">
+                  <div style="text-align: center;"><img src=img/adaReal.png class=gPic alt=Ada><br></div>
+                  <ul>
+                    <li>Considered to have written instructions for the first computer program in the mid 1800s</li><br>
+                    <li>Second Tuesday of October is Ada Lovelace Day</li><br>
+                    <li>Ada Initiative is a non-profit to increase involvement of women in the free culture and open source movements</li><br>
+                  </ul>
+                </div>
+                
+                <button class="accordion wwDivH">Adele Goldberg</button>
+                <div class="panel wwDivP">
+                  <div style="text-align: center;"><img src=img/adeleReal.png class=gPic alt=Adele><br></div>
+                  <ul>
+                    <li>Participated in developing programming language Smalltalk-80 and various concepts relating to object-oriented programming</li><br>
+                    <li>Served as the President of the Association for Computing Machinery</li><br>
+                    <li>Formulated Computer Science course at community colleges in the USA and at schools abroad</li><br>
+                  </ul>
+                </div>
+                
+                <button class="accordion wwDivH">Anita Borg</button>
+                <div class="panel wwDivP">
+                  <div style="text-align: center;"><img src=img/anitaReal.png class=gPic alt=Anita><br></div>
+                  <ul>
+                    <li>Developed MECCA, an email and web-based system for communicating in virtual communities</li><br>
+                    <li>Founded Systers, the first email network for women in technology</li><br>
+                    <li>Augusta Ada Lovelace Award, Heinz Award for Technology, EFF Pioneer Award</li><br>
+                  </ul>
+                </div>
+                
+                <button class="accordion wwDivH">Dorothy Vaughan</button>
+                <div class="panel wwDivP">
+                  <div style="text-align: center;"><img src=img/dorothyReal.png class=gPic alt=Dorothy><br></div>
+                  <ul>
+                    <li>African-American mathematician and human computer working for NASA</li><br>
+                    <li>Prepared for the introduction of machine computers by teaching herself and her staff the programming language of FORTRAN</li><br>
+                    <li>Featured in the movie Hidden Figures(2016)</li><br>
+                  </ul>
+                </div>
+                
+                <button class="accordion wwDivH">Grace Hopper</button>
+                <div class="panel wwDivP">
+                  <div style="text-align: center;"><img src=img/graceReal.png class=gPic alt=Grace><br></div>
+                  <ul>
+                    <li>Computer Scientist in U.S. Navy, pioneer of programming</li><br>
+                    <li>Popularized the idea of machine-independent programming languages, which led to the development of COBOL</li><br>
+                    <li>National Medal of Techology, Golden Gavel Award, SWE Achievement Award, and more</li><br>
+                  </ul>
+                </div>
+                
+                <button class="accordion wwDivH">Margaret Hamilton</button>
+                <div class="panel wwDivP">
+                  <div style="text-align: center;"><img src=img/margaretReal.png class=gPic alt=Margaret><br></div>
+                  <ul>
+                    <li>Director of the software engineering division that developed onboard flight software for the Apollo space program</li><br>
+                    <li>Founder and CEO of Hamilton Technologies</li><br>
+                    <li>Publiced over 130 papers, proceedings, and reports about the 60 projects and six major programs in which she has been involved</li><br>
+                  </ul>
+                </div>
+                
+                <button class="accordion wwDivH">Marissa Mayer</button>
+                <div class="panel wwDivP">
+                  <div style="text-align: center;"><img src=img/marissaReal.png class=gPic alt=Marissa><br></div>
+                  <ul>
+                    <li>CEO of Yahoo!, Information Technology Executive</li><br>
+                    <li>Key roles in Google search, images, news, maps, books, product search, toolbar, iGoogle, and gmail</li><br>
+                    <li>Holds several patents in artificial intelligence and interface design</li><br>
+                  </ul>
+                </div>
+                
+                <button class="accordion wwDivH">Roberta Williams</button>
+                <div class="panel wwDivP">
+                  <div style="text-align: center;"><img src=img/robertaReal.png class=gPic alt=Roberta><br></div>
+                  <ul>
+                    <li>Video Game Designer, writer, and cofounder of Sierra On-Line</li><br>
+                    <li>Credited wtih creating the graphic adventure genre</li><br>
+                    <li>One of the most influential PC game designers of the 80s and 90s</li><br>
+                  </ul>
+                </div>
+                
+                <button class="accordion wwDivH" style="border-bottom: 10px solid #f4f4f4;">Susan Wojcicki</button>
+                <div class="panel wwDivP">
+                  <div style="text-align: center;"><img src=img/susanReal.png class=gPic alt=Susan><br></div>
+                  <ul>
+                    <li>CEO of YouTube, Technology Executive</li><br>
+                    <li>Took first Computer Science class as a college senior</li><br>
+                    <li>Oversaw the development and release of new YouTube applications and experiences</li><br>
+                  </ul>
+                </div>
+                
+            </div>    
+      
+            
+        
+              </body>
+            
+                <script>
+              
+                 let toggle = 0;
+                    $(window).scroll(
+                    {
+                        previousTop: 0
+                    },
+                    
+                    function () {
+                            
+                             /* var width = (window.innerWidth > 0) ? window.innerWidth : document.documentElement.clientWidth;
+                            
+                            if(width > 1024){
+
+                                    var currentTop = $(window).scrollTop();
+                                    if (currentTop < this.previousTop) {
+                                       
+                                        $("#navigation").fadeIn();
+                                        
+                                    } else {
+                                        
+                                        $("#navigation").fadeOut();
+                                        $('#collapsibleNavbar').hide();
+                                        toggle = 0;
+                                        $('#scrollIcon').hide();
+                                        
+                                        
+                                    }
+                                    this.previousTop = currentTop;
+                                    
+                                    if($(window).scrollTop() === 0) {
+                                        $("#scrollIcon").show();
+                                      }
+                            
+                            }
+                            else { */
+                                
+                                document.getElementById("navigation").style.position = fixed;
+                                document.getElementById("navigation").style.top = 0;
+                                document.getElementById("navigation").style.width = "100%" ;
+                                document.getElementById("navigation").style.margin = 0;
+                                document.getElementById("navigation").style.padding = 0;
+                                document.getElementById("navigation").style.zIndex = 10;
+                            //}   
+                            
+                           
+                   });
+                    
+                    function showNav(){
+                        if (toggle == 0)
+                        {
+                           $('#collapsibleNavbar').show();
+                           toggle = 1;
+                        }
+                        else if (toggle == 1)
+                        {
+                            $('#collapsibleNavbar').hide();
+                            toggle = 0;
+                        }
+                    }
+                    
+                        function f1(newPic, name, li1, li2, li3){
+                            
+                            // Get the modal
+                            var modal = document.getElementById('modal1');
+                            
+                            //var img = document.getElementById(thumbId);
+                            var modalImg = document.getElementById('wwReal');
+                            //img.onclick = f1();
+                            
+                            modal.style.display = "block";
+                            modalImg.src = newPic;
+                            //captionText.innerHTML = this.alt;
+                            
+                            //change name
+                            document.getElementById("bioname").innerHTML = name;
+                            //change li1
+                            document.getElementById("li1").innerHTML = li1;
+                            //change li2
+                            document.getElementById("li2").innerHTML = li2;
+                            //change li3
+                            document.getElementById("li3").innerHTML = li3;
+                            
+                        }
+                        
+                        function f2(modalId) {
+                          
+                           // Get the modal
+                            var modal = document.getElementById(modalId);
+                            
+                            modal.style.display = "none";
+                            
+                        }
+                        
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+                        
+                        for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function() {
+                                /* Toggle between adding and removing the "active" class,
+                                to highlight the button that controls the panel */
+                                this.classList.toggle("active");
+                        
+                                /* Toggle between hiding and showing the active panel */
+                                var panel = this.nextElementSibling;
+                                if (panel.style.display === "block") {
+                                    panel.style.display = "none";
+                                } else {
+                                    panel.style.display = "block";
+                                }
+                            });
+                        }
+    
+             </script>
+                
+    
+        
+    </html>
